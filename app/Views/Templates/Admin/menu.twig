@@ -1,0 +1,50 @@
+<div data-scroll-to-active="true" class="main-menu menu-fixed menu-light menu-accordion menu-shadow">
+    <div class="main-menu-content">
+        <ul id="main-menu-navigation" data-menu="menu-navigation" class="navigation navigation-main">
+            <li class=" navigation-header">
+                <span>Menu</span>
+                <i data-toggle="tooltip" data-placement="right" data-original-title="General" class=" ft-minus"></i>
+            </li>
+            <li class="{{ pagina == 'inicio' ? 'active' }} nav-item">
+                <a href="{{ config.baseUrl }}adm/inicio">
+                    <i class="ft-home"></i>
+                    <span class="menu-title">Clientes Agentes</span>
+                </a>
+            </li>
+            <li class="{{ pagina == 'preagentes' ? 'active' }} nav-item">
+                <a href="{{ config.baseUrl }}adm/preagentes">
+                    <i class="ft-watch"></i>
+                    <span class="menu-title">Agentes Pendentes</span>
+                </a>
+            </li>
+            <li class="{{ pagina == 'indicacoes' ? 'active' }} nav-item">
+                <a href="{{ config.baseUrl }}adm/indicacoes">
+                    <i class="ft-bell"></i>
+                    <span class="menu-title">Indicações 
+                        <span class="tag tag tag-warning tag-pill float-xs-right mr-2" id="qtdIndicacoes">{{session.system.indicacoesNaoNisualizada}}</span>
+                    </span>
+                </a>
+            </li>
+            <li class="{{ pagina == 'usuarios' ? 'active' }} nav-item">
+                <a href="{{ config.baseUrl }}adm/usuarios">
+                    <i class="ft-user"></i>
+                    <span class="menu-title">Usuarios</span>
+                </a>
+            </li>
+            <li class="{{ pagina == 'produtos' ? 'active' }} nav-item">
+                <a href="{{ config.baseUrl }}adm/produtos">
+                    <i class="ft-layers"></i>
+                    <span class="menu-title">Produtos</span>
+                </a>
+            </li>
+            <li class="{{ pagina == 'base' ? 'active' }} nav-item">
+                <a href="{{ config.baseUrl }}adm/base">
+                    <i class="ft-folder"></i>
+                    <span class="menu-title">Base de Clientes</span>
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+</div>
